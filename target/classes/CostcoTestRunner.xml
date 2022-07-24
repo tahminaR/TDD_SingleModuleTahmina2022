@@ -2,25 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Costco Test Suite">
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserStack"/>
-    <parameter name="os" value="windows"/>
-    <parameter name="osVersion" value="10"/>
+<!--    <parameter name="os" value="windows"/>-->
+<!--    <parameter name="osVersion" value="10"/>-->
+    <parameter name="os" value="monterey"/>
+    <parameter name="OS X" value="12.3.1"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="103"/>
-    <!--    <parameter name="browserName" value="firefox"/>-->
+    <!--<parameter name="browserName" value="firefox"/>-->
     <parameter name="url" value="https://www.costco.com/"/>
-
     <test name="Costco Web Automation">
         <classes>
 
             <class name="com.costco.testPages.costcoHomePageTest.CostcoHomePageTest"/>
 
-
         </classes>
 
-
     </test>
-
 
 </suite>

@@ -191,7 +191,8 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <!--                Test Runner Files-->
                     <suiteXmlFiles>
-                        <suiteXmlFile>target/classes/AmazonTestRunner.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>target/classes/AmazonTestRunner.xml</suiteXmlFile>-->
+                            <suiteXmlFile>target/classes/CostcoTestRunner.xml</suiteXmlFile>
 
                     </suiteXmlFiles>
 

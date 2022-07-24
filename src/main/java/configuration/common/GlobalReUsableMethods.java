@@ -28,20 +28,20 @@ public class GlobalReUsableMethods extends WebTestBase {
         driver.findElement(By.xpath(locator)).click();
     }
 
-    public void clickOnElementCssSelector(String locator) {
+    public static void clickOnElementCssSelector(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
     }
 
 
-    public void clickById(String locator) {
-        driver.findElement(By.id(locator)).click();
+    public static void clickById(WebElement element) {
+        element.click();
     }
 
-    public void clickByName(String locator) {
+    public static void clickByName(String locator) {
         driver.findElement(By.name(locator)).click();
     }
 
-    public void clickByLinkText(String locator) {
+    public static void clickByLinkText(String locator) {
         driver.findElement(By.linkText(locator)).click();
     }
 
@@ -91,13 +91,14 @@ public class GlobalReUsableMethods extends WebTestBase {
         element.clear();
         element.sendKeys(value);
     }
+
     // ************************ ScrollDown ************* ScrollDown ******************
     public static void scrollDownToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
 
-//*********************************** convert To String *************************************
+    //*********************************** convert To String *************************************
     public static String convertToString(String st) {
         String splitString = "";
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
@@ -225,8 +226,12 @@ public class GlobalReUsableMethods extends WebTestBase {
         }
     }
 
-
-    public static void mouseHoverByWebElement(WebElement element) {
+    public static void mouseHoverByWebElement(String locator) {
+        WebElement element = driver.findElement(By.xpath(locator));
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
+    }
+    public static void mouseHoverByWebElement1(WebElement element) {
         Actions action = new Actions(driver);
         try {
             action.moveToElement(element);

@@ -17,7 +17,7 @@
             <!--            <class name="com.amazon.testPages.HomePageTest.HomePageTest1"/>-->
             <!--            <class name="com.amazon.testPages.HomePageTest.HomePageTest2"/>-->
             <!--            <class name="com.amazon.testPages.RegistrationPageTest.RegistrationPageTest"/>-->
-            <class name="com.amazon.testPages.HomePageTest.AmazonHomePageTest"/>
+<!-- <class name="com.amazon.testPages.HomePageTest.AmazonHomePageTest"/>-->
 
 
         </classes>

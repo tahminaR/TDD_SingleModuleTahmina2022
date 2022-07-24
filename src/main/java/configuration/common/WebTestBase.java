@@ -43,8 +43,8 @@ public class WebTestBase {
     // Temp Email for BrowserStack: xodale3453@storypo.com and password : test1234
     // Temp Email for SauceLabs: xodale3453@storypo.com and userName: xodale3453 password : Test1234$
     // public static final String BROWSERSTACK_USERNAME = System.getenv("BROWSERSTACK_USERNAME");
-    public static final String BROWSERSTACK_USERNAME = "demow_psrqT9";
-    public static final String BROWSERSTACK_ACCESS_KEY = "z9YcMMquKreiqRxscu8c";
+    public static final String BROWSERSTACK_USERNAME = "tahminarashid_gW1JMB";
+    public static final String BROWSERSTACK_ACCESS_KEY = "QKnobsFes6WqXjJnvoZa";
 
     // public static final String BROWSERSTACK_ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
     public static final String BROWSERSTACK_URL = "https://" + BROWSERSTACK_USERNAME + ":" + BROWSERSTACK_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
@@ -182,7 +182,6 @@ public class WebTestBase {
     public static void getLog(final String message) {
         Reporter.log(message, true);
     }
-
 
     public WebDriver getLocalDriver(String os, String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
